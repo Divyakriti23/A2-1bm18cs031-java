@@ -25,7 +25,7 @@ class Matrix
 		System.out.println("Enter the array elements of Matrix A \n");
 		for(i=0;i<r;i++)
 		{
-			System.out.println("Enter row " + i+1);
+			System.out.println("Enter row " + (i+1));
 			for(j=0;j<c;j++)
 			{
 				a[i][j]=sc.nextInt();
@@ -35,7 +35,7 @@ class Matrix
 		System.out.println("Enter the array elements of Matrix B \n");
 		for(i=0;i<r;i++)
 		{
-			System.out.println("Enter row " + i+1);
+			System.out.println("Enter row " + (i+1));
 			for(j=0;j<c;j++)
 			{
 				b[i][j]=sc.nextInt();
