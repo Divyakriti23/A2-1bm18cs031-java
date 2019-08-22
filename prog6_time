@@ -1,0 +1,75 @@
+/* Write a program to Implement the TIME class. Each object of this class will represent a specified time of the day, storing the hours,
+minutes and seconds as integer. Include a constructor,access functions, a function advance (int h, int m,int s) to advance the given 
+time, function currenttime (int h, int m, int s) to update the current time of an existing object and a print function to print the 
+details. */
+
+import java.util.*;
+class TIME
+{
+   int hh,mm,ss;
+   TIME()
+   {
+       hh=0;
+       mm=0;
+       ss=0;
+    }
+   void advance(int h, int m, int s)
+   {
+      hh+=h;
+      mm+=m;
+      ss+=s;
+    }
+   void currentTime(int h,int m,int s)
+   {
+       hh=h;
+       mm=m;
+       ss=s;
+    }
+   void display()
+   {
+       if(ss>=60)
+       {
+           mm++;
+           ss-=60;
+       }
+       if(mm>=60)
+       {
+           hh++;
+           mm-=60;
+        }
+       if(hh>=24)
+       {
+           hh-=24;
+        }
+        System.out.println("The current time is "+hh+":"+mm+":"+ss);
+    }
+}
+class demo
+{
+    public static void main()
+    {
+        TIME obj=new TIME();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the current time displayed on your watch");
+        int h=sc.nextInt();
+        int m=sc.nextInt();
+        int s=sc.nextInt();
+        obj.currentTime(h,m,s);
+        obj.display();
+        System.out.println("Do you want to advance the time?");
+        System.out.println("Y or N");
+        char d=sc.next().charAt(0);
+        if(d=='Y')
+        {
+           System.out.println("Enter your current time");
+           int hh=sc.nextInt();
+           int mm=sc.nextInt();
+           int ss=sc.nextInt();
+           obj.advance(hh,mm,ss);
+           obj.display();
+        }
+    }
+}
+           
+        
+        
