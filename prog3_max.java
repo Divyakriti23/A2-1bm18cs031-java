@@ -29,15 +29,12 @@ class Max
 		//Find Max element
 		int max=0;
 		System.out.println("The maximum element is \n");
-		for(i=0;i<r;i++)
+		for(int y[]:arr)
 		{
-	
-			for(j=0;j<c;j++)
+			for(int x:y)
 			{
-				if(max<arr[i][j])
-				{
-					max=arr[i][j];
-				}	
+				if(x>max)
+				max=x;
 			}
 		}
 		System.out.println(max);
