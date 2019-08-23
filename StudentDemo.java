@@ -74,7 +74,34 @@ class StudentDemo
 	}
 }
 		
-		
+
+OUTPUT
+
+Enter the number of subjects
+5
+Enter your name and usn
+Nanma
+1bm18cs031
+Enter the credits and the marks respectively
+Subject 1:
+4
+88
+Subject 2:
+3
+22
+Subject 3:
+5
+90
+Subject 4:
+5
+89
+Subject 5:
+4
+99
+Name -> Nanma
+USN -> 1bm18cs031
+SGPA -> 7.904762
+
 
 		
 			
