@@ -27,7 +27,7 @@ class Customer
 	}	
 
 	void input()
-  {
+	  {
 		Scanner in = new Scanner(System.in);
 		System.out.print("enter name: ");
 		name = in.next();
@@ -42,7 +42,7 @@ class Customer
 	}
 	
 	void calcDiscount()
-  {
+	  {
 		total_price = price * quantity;
 		if (total_price >= 50000)
 			discount = 0.25f * total_price;
@@ -54,7 +54,7 @@ class Customer
 	}
 
 	void show() 
-  {
+	  {
 		System.out.println("name: " + name);
 		System.out.println("number: " + number);
 		System.out.println("quantity: " + quantity);
@@ -69,7 +69,7 @@ class Customer
 class CustomerMain
 {
 	public static void main(String[] args) 
-  {
+  	{
 		Scanner in = new Scanner(System.in);
 		System.out.print("enter number of customer: ");
 		int n = in.nextInt();
@@ -77,12 +77,12 @@ class CustomerMain
 		Customer[] customers = new Customer[n];
 
 		for (int i = 0; i < n; i++)
-    {
+    		{
 			customers[i] = new Customer(); // use default constructor
 			customers[i].input();
 		}
 		for (int i = 0; i < n; i++)
-    {
+    		{
 			customers[i].show();
 		}
 	}
