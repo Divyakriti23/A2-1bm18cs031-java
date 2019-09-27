@@ -57,7 +57,38 @@ class Main{
 	}
 }
 			
-		
-		
-		
+/*		
+OUTPUT:
+PRESS 1: Rectangle
+PRESS 2: Triangle
+PRESS 3: Circle
+
+1
+Enter length and breadth
+10
+20
+Area = 200
+
+PRESS 1: Rectangle
+PRESS 2: Triangle
+PRESS 3: Circle
+
+2
+Enter length and breadth
+15
+20
+Area = 150.0
+
+
+PRESS 1: Rectangle
+PRESS 2: Triangle
+PRESS 3: Circle
+
+3
+Enter radius
+5
+Area = 78.5
+*/
+
+
 			
