@@ -30,9 +30,9 @@ class Test extends Student{
 		super.get();
 		System.out.println("Enter cie marks with the corresponding subject credits");
 		for(int i=0;i<6;i++){
-			System.out.println("Subject "+(i+1)+"marks: ");
+			System.out.println("Subject "+(i+1)+" marks: ");
 			cie_m[i] = sc.nextFloat();
-			System.out.println("Subject "+(i+1)+"credits: ");
+			System.out.println("Subject "+(i+1)+" credits: ");
 			credits[i] = sc.nextInt();
 			totalc += credits[i];
 		}
@@ -41,8 +41,8 @@ class Test extends Student{
 	void display(){
 		super.display();
 		for(int i=0;i<6;i++){
-			System.out.println("Subject "+(i+1)+"cie marks: "+cie_m[i]);
-			System.out.println("Subject "+(i+1)+"credits: "+credits[i]);
+			System.out.println("Subject "+(i+1)+" cie marks: "+cie_m[i]);
+			System.out.println("Subject "+(i+1)+" credits: "+credits[i]);
 		}
 	}
 }
@@ -53,7 +53,7 @@ class Exam extends Test{
 		super.get();
 		System.out.println("Enter see marks");
 		for(int i=0;i<6;i++){
-			System.out.println("Subject "+(i+1)+"marks: ");
+			System.out.println("Subject "+(i+1)+" marks: ");
 			see[i] = sc.nextFloat();
 		}
 	}
@@ -61,7 +61,7 @@ class Exam extends Test{
 	void display(){
 		super.display();
 		for(int i=0;i<6;i++){
-			System.out.println("Subject "+(i+1)+"see marks: "+see[i]);
+			System.out.println("Subject "+(i+1)+" see marks: "+see[i]);
 		}
 	}
 }
